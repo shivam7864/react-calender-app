@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Tech Corp",
+    "location": "New York, USA",
+    "linkedin": "https://www.linkedin.com/company/tech-corp",
+    "emails": ["contact@techcorp.com"],
+    "phones": ["+1-123-456-7890"],
+    "comments": "Potential partner",
+    "communicationPeriodicity": "2 weeks"
+  },
+  {
+    "id": 2,
+    "name": "Innovatech",
+    "location": "San Francisco, USA",
+    "linkedin": "https://www.linkedin.com/company/innovatech",
+    "emails": ["info@innovatech.com"],
+    "phones": ["+1-987-654-3210"],
+    "comments": "Innovative solutions provider",
+    "communicationPeriodicity": "1 month"
+  }
+]
