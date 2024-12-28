@@ -4,7 +4,6 @@ import CommunicationActionModal from './CommunicationActionModal';
 
 const Dashboard = () => {
     const [companies, setCompanies] = useState([]);
-    const [selectedCompanies, setSelectedCompanies] = useState([]);
     const [openModal, setOpenModal] = useState(false);
     const [selectedCompany, setSelectedCompany] = useState(null);
 

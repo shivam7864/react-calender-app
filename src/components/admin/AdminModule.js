@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Tabs, Tab, Typography } from '@mui/material';
+import { Box, Tabs, Tab } from '@mui/material';
 import CompanyManagement from './CompanyManagement';
 import CommunicationMethodManagement from './CommunicationMethodManagement';
 

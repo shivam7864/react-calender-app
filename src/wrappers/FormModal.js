@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Modal, Box, TextField, Button } from '@mui/material';
-import { useForm, Controller, useWatch } from 'react-hook-form';
+import { useForm, Controller } from 'react-hook-form';
 
 const FormModal = ({ open, onClose, onSave, defaultValues }) => {
   const { control, handleSubmit, reset } = useForm({

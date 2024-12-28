@@ -1,12 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Box, CssBaseline } from '@mui/material';
 import AdminModule from './components/admin/AdminModule';
 import CompanyManagement from './components/admin/CompanyManagement';
 import CommunicationMethodManagement from './components/admin/CommunicationMethodManagement';
 import Navbar from './components/common/Navbar';
 import SignInPage from './components/SignInPage';
-import Dashboard from './components/user/Dashboard';
 import Notifications from './components/user/Notifications';
 import CalendarView from './components/user/CalendarView';
 import UserModule from './components/user/UserModule';

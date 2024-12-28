@@ -1,14 +1,9 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
-import { NavLink, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 import { useAppContext } from '../../AppContext';
 
 const Navbar = () => {
-  const navStyle = {
-    textDecoration: 'none',
-    color: 'white',
-    marginLeft: 16,
-  };
 
   const {role, updateRole} = useAppContext();
   const navigate = useNavigate();
