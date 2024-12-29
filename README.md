@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+**Admin and User Module Application**
+This project is a web application built using React for the frontend and localStorage for data storage. It leverages Material-UI (MUI) for UI components and is deployed on Netlify.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Features**
 
-## Available Scripts
+**Admin Module**__
 
-In the project directory, you can run:
+Company Management: Add, update, and manage companies.
+Communication Method Management: Define and manage methods like LinkedIn, Email, etc.
+Tab-based Navigation: Simplifies access to different management sections.
 
-### `npm start`
+**User Module**__
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Dashboard: Provides an overview of user-specific data.
+Notifications: Alerts users about overdue and upcoming communications.
+Calendar View: Displays past and future communications in an interactive calendar.
+Data Management
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**LocalStorage**: Stores user-specific data, including:
+**userCompanies**: List of companies with communication logs and schedules.
+**companies**: Source data for initializing userCompanies.
 
-### `npm test`
+**Tech Stack**
+Frontend: React
+State Management: React Hooks
+UI Components: Material-UI (MUI)
+Data Storage: LocalStorage
+Deployment: Netlify
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Packages Used**
 
-### `npm run build`
+Core Dependencies:
+react: ^19.0.0
+react-dom: ^19.0.0
+react-scripts: 5.0.1
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+UI and Styling:
+@mui/material: ^6.3.0
+@mui/icons-material: ^6.3.0
+@emotion/react: ^11.14.0
+@emotion/styled: ^11.14.0
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Data Grid and Date Pickers:
+@mui/x-data-grid: ^7.23.4
+@mui/x-date-pickers: ^7.23.3
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Calendar:
+react-calendar: ^5.1.0
 
-### `npm run eject`
+Form Handling:
+react-hook-form: ^7.54.2
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Routing:
+react-router-dom: ^7.1.1
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Deployment**
+The application is deployed on Netlify. You can access the live version here.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Setup Instructions
+Prerequisites
+Node.js (v14 or higher)
+npm or yarn
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Installation**
 
-## Learn More
+git clone https://github.com/your-username/admin-user-module-app.git
+npm install
+npm run start
+The application will be available at http://localhost:3000.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Known Limitations**
+Data Persistence: Uses localStorage, which is browser-specific and not shared across devices.
+Date Management: Currently relies on ISO date strings, which may cause issues with timezone differences.
+Scalability: Designed for small-scale data management; additional backend integration is needed for large-scale applications.
